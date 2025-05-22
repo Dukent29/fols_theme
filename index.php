@@ -71,14 +71,39 @@ get_header();
         </div>
     </section>
 
+<?php 
+$image = get_field('pourquoi_image'); // returns array if using ACF image field
+?>
+
 <section class="pourquoi-fols">
     <div class="container">
-        <div class="p-title">
-            <h2 class="title">Pourquoi Choisir FOLS Security Group?</h2>
-            <p class="prq-subtitle">Depuis plus de 15 ans, nous fournissons des solutions de sécurité de premier ordre à nos clients en France. Notre approche personnalisée et notre expertise nous distinguent de la concurrence.</p>
+        <div class="pourquoi-wrapper"> <!-- Flex container -->
+
+            <div class="p-title">
+                <h2 class="title">Pourquoi Choisir FOLS Security Group?</h2>
+                <p class="prq-subtitle">
+                    Depuis plus de 15 ans, nous fournissons des solutions de sécurité de premier ordre à nos clients en France. 
+                    Notre approche personnalisée et notre expertise nous distinguent de la concurrence.
+                </p>
+
+                <ul class="reasons">
+                    <li><strong>Expertise Professionnelle</strong> – Équipe d'experts certifiés avec des années d'expérience dans le secteur de la sécurité.</li>
+                    <li><strong>Solutions Personnalisées</strong> – Approche sur mesure pour répondre aux besoins spécifiques de chaque client.</li>
+                    <li><strong>Technologie de Pointe</strong> – Utilisation des dernières technologies et équipements de sécurité.</li>
+                    <li><strong>Service 24/7</strong> – Assistance et surveillance disponibles 24h/24, 7j/7, 365 jours par an.</li>
+                </ul>
+            </div>
+
+            <?php if ($image): ?>
+                <div class="pourquoi-img">
+                    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                </div>
+            <?php endif; ?>
+
         </div>
     </div>
 </section>
+
 
 <section class="commentaires">
     <div class="container">
