@@ -305,3 +305,69 @@ h1{
   font-weight: 600;
   font-size: 18px;
 }
+.commentaires {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.com-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.com-title .title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+}
+
+.com-subtitle {
+  color: #555;
+  font-size: 16px;
+}
+
+.testimonials-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+}
+span.qe-testimonial-byline {
+    margin-bottom: .5rem;
+    color: #555;
+    font-size: 14px;
+}
+.qe-testimonial-text p{
+  color: #555;
+  font-style: italic;
+}
+
+.testimonials-wrapper .qe-testimonial-author{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.testimonials-wrapper .qe-testimonial-name {
+  font-weight: 600;
+  color: #111;
+  margin-top: 0.5rem;
+}
+.qe-testimonial-wrapper{
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
