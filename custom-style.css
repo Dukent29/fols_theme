@@ -44,7 +44,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /* start styling */
 .header-container {
   background-color: #f8f9fa;
@@ -257,6 +257,7 @@ h1{
   border-radius: 0; /* ✅ Supprime l’arrondi */
   box-shadow: none; /* ✅ Supprime l’ombre si tu veux un style flat */
   object-fit: cover;
+  border-bottom: 3px solid #0047FF; /* Ajoute une bordure légère */
 }
 
 .reasons {
@@ -267,6 +268,16 @@ h1{
 .reasons li {
   margin-bottom: 1rem;
   list-style: "✔ ";
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 20px;
+}
+.reasons li i{
+  color: #0047FF;
+  font-size: 24px;
+
+
 }
 
 @media (max-width: 768px) {
@@ -289,4 +300,8 @@ h1{
   font-size: 28px;
   font-weight: 800;
   color: #000;
+}
+.reasons h3 {
+  font-weight: 600;
+  font-size: 18px;
 }

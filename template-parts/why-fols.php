@@ -15,13 +15,17 @@ $image = get_field('pourquoi_image', 13);
 
                 <ul class="reasons">
                     <?php for ($i = 1; $i <= 4; $i++) :
-                        $reason_title = get_field("raison_{$i}_titre", 13);
-                        $reason_desc = get_field("raison_{$i}_description", 13);
+                        $reason_title = get_field("raison_{$i}_titre", $page_id);
+                        $reason_desc = get_field("raison_{$i}_description", $page_id);
                         if ($reason_title && $reason_desc): ?>
-                            <li><strong style="font-weight: 600;"><?php echo esc_html($reason_title); ?><br></strong> – <?php echo esc_html($reason_desc); ?></li>
+                            <li>
+                                <h3><i class="bi bi-shield-lock-fill"> </i><?php echo esc_html($reason_title); ?></h3>
+                                <p><?php echo esc_html($reason_desc); ?></p>
+                            </li>
                         <?php endif;
                     endfor; ?>
                 </ul>
+
             </div>
 
             <?php if ($image): ?>
