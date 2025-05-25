@@ -2,7 +2,7 @@
         <div class="container">
             <h2 class="section-title">Nos Services de Sécurité</h2>
             <p class="section-description">
-                Nous proposons une gamme complète de services de sécurité adaptés à vos besoins spécifiques, qu'il s'agisse de protéger votre entreprise, votre domicile ou vos événements.
+                Nous proposons une gamme complète de services de sécurité adaptés à vos besoins spécifiques,<br> qu'il s'agisse de protéger votre entreprise, votre domicile ou vos événements.
             </p>
 
             <div class="services-grid">
