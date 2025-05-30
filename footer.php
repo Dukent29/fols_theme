@@ -10,6 +10,7 @@
  */
 
 ?>
+<!-- stlize le footer  -->
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
