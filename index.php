@@ -116,16 +116,16 @@ $image = get_field('pourquoi_image'); // returns array if using ACF image field
 
 <section class="banner"></section>
 <section class="contact">
-    <div class="container">
-        <div class="con-title">
-            <h2>Prêt à Sécuriser Votre Environnement?</h2>
-            <p>Contactez-nous dès aujourd'hui pour discuter de vos besoins en matière de sécurité et obtenir un devis personnalisé.</p>
-            <div class="btn">
-                <button>Nous Contacter</button>
-                <button>En Savoir Plus</button>
-            </div>
-        </div>
+  <div class="container">
+    <div class="con-title">
+      <h2>Prêt à Sécuriser Votre Environnement?</h2>
+      <p>Contactez-nous dès aujourd'hui pour discuter de vos besoins en matière de sécurité et obtenir un devis personnalisé.</p>
+      <div class="btn">
+        <button class="primary">Nous Contacter</button>
+        <button class="secondary">En Savoir Plus</button>
+      </div>
     </div>
+  </div>
 </section>
 
 
