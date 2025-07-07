@@ -44,7 +44,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 /* start styling */
 .header-container {
   background-color: #f8f9fa;
@@ -332,7 +333,10 @@ h1{
   font-size: 16px;
   padding-top: .9rem;
 }
-
+/* testimonial */
+.testimonials-wrapper .swiper-slide {
+  height: auto;
+}
 .testimonials-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -456,6 +460,7 @@ span.qe-testimonial-byline {
   color: #cbd5e1;
   padding: 60px 20px 20px;
   font-family: sans-serif;
+  margin-bottom: -40px!important;
 }
 
 .footer-container {

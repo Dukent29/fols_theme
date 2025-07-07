@@ -94,8 +94,12 @@ function fols_security_enqueue_styles() {
 	// Main style.css
 	wp_enqueue_style( 'fols-style', get_stylesheet_uri() );
 
+	// Google Fonts
+	wp_enqueue_style('poppins-font', 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap', false);
+
 	// Custom overrides
 	wp_enqueue_style( 'fols-custom-style', get_template_directory_uri() . '/custom-style.css', array('fols-style'), '1.0.0' );
+	
 }
 add_action( 'wp_enqueue_scripts', 'fols_security_enqueue_styles' );
 require get_template_directory() . '/inc/template-tags.php';
